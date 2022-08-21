@@ -121,11 +121,6 @@
                             <img src="assets/images/Ureg-Ureg-Marker.png" alt="Ureg-Ureg-Marker" class="img-fluid">
                         </div>
                         <ol id="selected-player-list">
-                            <li>Lionel Messi</li>
-                            <li>Lionel Messi</li>
-                            <li>Lionel Messi</li>
-                            <li>Lionel Messi</li>
-                            <li>Lionel Messi</li>
                         </ol>
                     </div>
 
@@ -136,18 +131,18 @@
                         </div>
                         <div class="row align-items-center mb-3">
                             <div class="col-5"><label>Per Player</label></div>
-                            <div class="col-7"><input type="text" class="form-control"></div>
+                            <div class="col-7"><input type="text" id="per-player-field" class="form-control"></div>
                         </div>
-                        <button class="btn btn-lg rounded-0 w-100" id="calculate">Calculate</button>
-                        <p class="d-flex align-items-center justify-content-between mt-3 mb-4">Player Expenses <span class="text-white">$<span>5000</span></span></p>
+                        <button class="btn btn-lg rounded-0 w-100" id="player-expense-btn">Calculate</button>
+                        <p class="d-flex align-items-center justify-content-between mt-3 mb-4">Player Expenses <span class="text-white">$<span id="total-player-expense">5000</span></span></p>
 
                         <div class="row align-items-center mb-3">
                             <div class="col-5"><label>Manager</label></div>
-                            <div class="col-7"><input type="text" class="form-control"></div>
+                            <div class="col-7"><input type="text" id="manager-field" class="form-control"></div>
                         </div>
                         <div class="row align-items-center mb-4">
                             <div class="col-5"><label>Coach</label></div>
-                            <div class="col-7"><input type="text" class="form-control"></div>
+                            <div class="col-7"><input type="text" id="coach-field" class="form-control"></div>
                         </div>
                         <button class="btn btn-lg rounded-0 w-100 mb-4" id="calculate-total">Calculate Total</button>
                         <p class="d-flex align-items-center justify-content-between">Total <span class="text-orange">$<span>11000</span></span></p>
