@@ -30,6 +30,33 @@ body {
 /*################ End of banner css ################*/
 
 
+/*################ player-card css start ################*/
+.player-card {
+    background-color: #0D0D0D;
+    border-color: #434343;
+}
+
+.player-card .player-name {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.player-card .description {
+    color: #B3B3B3;
+}
+
+.player-card .btn-player-select {
+    background-color: #015196;
+    color: #fff;
+}
+
+.player-card .btn-player-select:disabled {
+    background-color: #A2A9AF;
+}
+
+/*################ End of player-card css ################*/
+
+
 /*################ ? css start ################*/
 
 /*################ End of ? css ################*/
