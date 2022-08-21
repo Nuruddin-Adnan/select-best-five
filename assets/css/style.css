@@ -83,11 +83,26 @@ body {
     color: #fff;
 }
 
-/* .budget-card .form-control {} */
+.budget-card .form-control {
+    border: 1px solid #fff;
+    border-radius: 0;
+    background-color: transparent;
+    color: #fff;
+}
+
+.budget-card label,
+.budget-card p {
+    color: #AFAFAF;
+}
+
+.budget-card .text-orange {
+    color: #FF5E19;
+}
 
 /*################ End of budget-card css ################*/
 
 
-/*################ ? css start ################*/
+/*################ footer css start ################*/
+.footer .footer-copyright {}
 
-/*################ End of ? css ################*/
+/*################ End of footer css ################*/
