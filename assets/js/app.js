@@ -21,6 +21,7 @@ function setElementValueById(elementId, text) {
 // ############# End of common utilities function #############
 
 
+
 // player select
 document.querySelectorAll('.btn-player-select').forEach(btnPlayerSelect => {
     btnPlayerSelect.addEventListener('click', function (event) {
@@ -40,6 +41,8 @@ document.querySelectorAll('.btn-player-select').forEach(btnPlayerSelect => {
 });
 
 
+
+
 // total player expense calculation
 document.getElementById('player-expense-btn').addEventListener('click', function () {
     const perPlayerExpense = getInputValueById('per-player-field');
@@ -55,5 +58,23 @@ document.getElementById('player-expense-btn').addEventListener('click', function
         // update the new expense in HMLT
         setElementValueById('total-player-expense', totalPlayerExpense);
     }
+})
 
+
+// total match expense calculation
+document.getElementById('calculate-total').addEventListener('click', function () {
+    const totalPlayerExpense = getElementValueById('total-player-expense');
+    const managerExpense = getInputValueById('manager-field');
+    const coachExpense = getInputValueById('coach-field');
+
+    if (totalPlayerExpense <= 0) {
+        alert('please calculate player expense first');
+        return;
+    } else if ((isNaN(managerExpense) || managerExpense < 0) || (isNaN(coachExpense) || coachExpense < 0)) {
+        alert('please enter a valid value');
+        return;
+    } else {
+        totalMatchExpense = totalPlayerExpense + managerExpense + coachExpense;
+        setElementValueById('total-match-expense', totalMatchExpense);
+    }
 })
