@@ -103,6 +103,35 @@ body {
 
 
 /*################ footer css start ################*/
-.footer .footer-copyright {}
+.footer .footer-copyright {
+    font-weight: 500;
+}
 
 /*################ End of footer css ################*/
+
+
+
+/*################################ responsive css start ################################*/
+@media screen and (max-width: 767px) {
+    .banner {
+        padding: 70px 0;
+    }
+
+    .banner h1 {
+        font-size: 38px;
+    }
+
+    .player-card .player-name {
+        font-size: 14px;
+    }
+
+    .player-card .description {
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
+
+/*################################ End of responsive css ###############################*/
