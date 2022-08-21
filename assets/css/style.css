@@ -1,0 +1,35 @@
+/*################ global css start ################*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: rgb(21, 21, 21);
+    color: #fff;
+}
+
+/*################ End of global css ################*/
+
+
+
+/*################ banner css start ################*/
+.banner {
+    background: url(../images/banner-bg.png) no-repeat center center/cover;
+    padding: 150px 0;
+}
+
+.banner h1 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 76px;
+    color: #FF5E19;
+}
+
+/*################ End of banner css ################*/
+
+
+/*################ ? css start ################*/
+
+/*################ End of ? css ################*/
