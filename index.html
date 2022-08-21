@@ -18,8 +18,13 @@
     <header>
         <div class="banner text-center">
             <div class="container">
-                <h1>Select Your Best Five</h1>
-                <p class="col-xl-7 col-md-10 m-auto lead">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <div class="col-xl-7 col-md-10 m-auto">
+                    <h1>Select Your Best Five</h1>
+                    <div class="text-end">
+                        <img src="assets/images/Line-Marker-white.png" alt="line" class="img-fluid">
+                    </div>
+                    <p class="lead">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
             </div>
         </div>
     </header>
@@ -109,7 +114,45 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3"></div>
+                <div class="col-xl-3">
+                    <div class="selected-player-card p-md-4 p-3 mb-4">
+                        <div class="heading text-center mb-4">
+                            <h3 class="fs-4 fw-semibold lh-1">Selected - V</h3>
+                            <img src="assets/images/Ureg-Ureg-Marker.png" alt="Ureg-Ureg-Marker" class="img-fluid">
+                        </div>
+                        <ol id="selected-player-list">
+                            <li>Lionel Messi</li>
+                            <li>Lionel Messi</li>
+                            <li>Lionel Messi</li>
+                            <li>Lionel Messi</li>
+                            <li>Lionel Messi</li>
+                        </ol>
+                    </div>
+
+                    <div class="budget-card p-md-4 p-3">
+                        <div class="heading text-center mb-4">
+                            <h3 class="fs-4 fw-semibold lh-1">Budget</h3>
+                            <img src="assets/images/Ureg-Ureg-Marker.png" alt="Ureg-Ureg-Marker" class="img-fluid">
+                        </div>
+                        <div class="row align-items-center mb-3">
+                            <div class="col-5"><label>Per Player</label></div>
+                            <div class="col-7"><input type="text" class="form-control"></div>
+                        </div>
+                        <button class="btn btn-lg rounded-0 w-100" id="calculate">Calculate</button>
+                        <div class="d-flex align-items-center justify-content-between">Player Expenses <span>$<span>5000</span></span></div>
+
+                        <div class="row align-items-center mb-3">
+                            <div class="col-5"><label>Manager</label></div>
+                            <div class="col-7"><input type="text" class="form-control"></div>
+                        </div>
+                        <div class="row align-items-center mb-4">
+                            <div class="col-5"><label>Coach</label></div>
+                            <div class="col-7"><input type="text" class="form-control"></div>
+                        </div>
+                        <button class="btn btn-lg rounded-0 w-100 mb-4" id="calculate-total">Calculate Total</button>
+                        <div class="d-flex align-items-center justify-content-between">Total <span class="text-warning">$<span>11000</span></span></div>
+                    </div>
+                </div>
             </div>
         </div>
 

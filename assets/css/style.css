@@ -57,6 +57,37 @@ body {
 /*################ End of player-card css ################*/
 
 
+/*################ selected-player-card css start ################*/
+.selected-player-card {
+    background-color: #0D0D0D;
+}
+
+#selected-player-list li {
+    padding: 12px 0;
+}
+
+#selected-player-list li::marker {
+    color: #888888;
+}
+
+/*################ End of selected-player-card css ################*/
+
+
+/*################ budget-card css start ################*/
+.budget-card {
+    background-color: #0D0D0D;
+}
+
+.budget-card .btn {
+    background-color: #015196;
+    color: #fff;
+}
+
+/* .budget-card .form-control {} */
+
+/*################ End of budget-card css ################*/
+
+
 /*################ ? css start ################*/
 
 /*################ End of ? css ################*/
