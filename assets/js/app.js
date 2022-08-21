@@ -42,7 +42,6 @@ document.querySelectorAll('.btn-player-select').forEach(btnPlayerSelect => {
 
 
 
-
 // total player expense calculation
 document.getElementById('player-expense-btn').addEventListener('click', function () {
     const perPlayerExpense = getInputValueById('per-player-field');
@@ -67,7 +66,7 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     const managerExpense = getInputValueById('manager-field');
     const coachExpense = getInputValueById('coach-field');
 
-    if (totalPlayerExpense <= 0) {
+    if (totalPlayerExpense < 0) {
         alert('please calculate player expense first');
         return;
     } else if ((isNaN(managerExpense) || managerExpense < 0) || (isNaN(coachExpense) || coachExpense < 0)) {
